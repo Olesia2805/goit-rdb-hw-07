@@ -63,3 +63,16 @@ WHERE date BETWEEN '1996-07-10 00:00:00' AND '1996-10-08 00:00:00';
 ![p4_where_between](./p4_where_between.png)
 
 ---
+
+## Task 5
+**Write a SQL query that displays the `id` attribute, the `date` attribute and the JSON object `{‘id’: <string id attribute>, ‘date’: <string date attribute>}`. To create a JSON object, use the function.**
+
+```sql
+SELECT id,
+       date,
+       JSON_OBJECT("id", CAST(id AS CHAR), 
+                   "date", CAST(date AS CHAR)) AS json_data
+FROM orders;
+```
+
+![p5_json](./p5_json.png)
