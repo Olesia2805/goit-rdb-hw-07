@@ -12,6 +12,8 @@ SELECT id,
 FROM orders;
 ```
 
+![p1_year_month_day](./p1_year_month_day.png)
+
 ---
 
 ## Task 2
@@ -31,6 +33,8 @@ SELECT id,
 FROM orders;
 ```
 
+![p2_add_day](./p2_add_day.png)
+
 ---
 
 ## Task 3
@@ -43,6 +47,8 @@ SELECT id,
 FROM orders;
 ```
 
+![p3_unix_timestamp](./p3_unix_timestamp.png)
+
 ---
 
 ## Task 4
@@ -53,5 +59,7 @@ SELECT COUNT(date) AS days_between
 FROM orders
 WHERE date BETWEEN '1996-07-10 00:00:00' AND '1996-10-08 00:00:00';
 ```
+
+![p4_where_between](./p4_where_between.png)
 
 ---
